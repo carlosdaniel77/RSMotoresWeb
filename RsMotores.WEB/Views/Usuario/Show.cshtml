@@ -1,0 +1,27 @@
+@*@model ICollection<Usuario>*@
+@model ICollection<RsMotores.WEB.Models.Usuario>
+
+@{
+    ViewBag.Title = "Visualizar";
+    Layout = "_Layout";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>CPF</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Nickname</td>
+            <td>@item.Cpf</td>
+        </tr>
+    }
+
+</table>

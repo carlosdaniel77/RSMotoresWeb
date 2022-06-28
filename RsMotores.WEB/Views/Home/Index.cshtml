@@ -1,0 +1,15 @@
+﻿@model RsMotores.WEB.Models.Usuario
+
+
+
+<div class="text-center">
+    <h1 style="color:@ViewBag.Color" class="display-4">@ViewBag.Msg</h1>
+    <p>Bem vindo @Model.nome</p>
+</div>
+<script>
+    Swal.fire({
+        icon: '@ViewBag.Icon',
+        title: '@ViewBag.Title',
+        text: '@ViewBag.Msg'
+    })
+</script>

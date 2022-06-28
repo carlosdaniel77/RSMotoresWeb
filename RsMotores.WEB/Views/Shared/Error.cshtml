@@ -1,0 +1,7 @@
+﻿@model RsMotores.WEB.Models.ErrorMessage
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">@Model.msg</h1>
+<a asp-controller="Login" asp-action="Token">Voltar Início</a>
